@@ -86,4 +86,18 @@ body {
 
 .project-title{
     background-color: rgb(27, 116, 125);
+    grid-area: topbar;
+}
+
+#project-contents{
+    display: grid;
+    grid-template-areas: 
+        "topbar topbar topbar"
+        "project1 project2 project3"
+        "project4 project5 project6";
+}
+
+#project-contents img {
+    max-width: 400px;
+    max-height: 300px;
 }
