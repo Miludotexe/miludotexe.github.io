@@ -58,7 +58,7 @@ body {
 
 #cursor{
     font-family: Helvetica;
-    /* animation: cursorani 1s infinite; */
+    
     font-size: 90px;
     position: relative;
     bottom: -11px;
