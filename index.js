@@ -14,4 +14,4 @@ setInterval(() => {
         document.getElementById('cursor').style.opacity = 1;
     }
     visibleCursor = !visibleCursor
-}, 50);
+}, 500);
