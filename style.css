@@ -6,6 +6,12 @@ body {
     font-family: 'Nanum Gothic Coding';
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Toppanel rules */
+
 #toppanel{
     position: fixed;
     width: 100%;
@@ -23,16 +29,14 @@ body {
     
 }
 
-::-webkit-scrollbar{
-    display: none;
-}
-
 #content{
     /* padding-top: 20%; */
     color: rgb(211, 216, 216);
     padding-top: 100vh;
     /* text-align: center; */
 }
+
+/* Title slide rules */
 
 #title-slide {
     display: flex;
@@ -70,14 +74,16 @@ body {
     font-size: 60px;
 }
 
+/* Project slide rules */
+
 #project-slide{
     height: 100vh;
     width: 100vw;
-    background-image: url(./Assets/background.gif);
-    background-size:cover;
-    background-repeat: no-repeat;
-    filter: blur(8px);
+    background-color: rgb(17, 20, 24);
     color: rgb(211, 216, 216);
     text-align: center;
 }
 
+.project-title{
+    background-color: rgb(27, 116, 125);
+}
