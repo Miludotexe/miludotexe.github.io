@@ -1,9 +1,11 @@
 @import url(./Assets/codingfont.css);
+@import url(./Assets/Sofiafont.css);
 
 body {
     background-color: rgb(17, 20, 24);
     color: rgb(211, 216, 216);
     font-family: 'Nanum Gothic Coding';
+    margin: 0;
 }
 
 ::-webkit-scrollbar{
@@ -20,6 +22,8 @@ body {
     font-weight: bold;
     text-align: center;
     z-index: 1;
+    
+    
     
 }
 
@@ -84,20 +88,43 @@ body {
     text-align: center;
 }
 
-.project-title{
-    background-color: rgb(27, 116, 125);
-    grid-area: topbar;
+#project-slide a {
+    text-decoration: none;
+    color: rgb(211, 216, 216);
+    font-family: 'Sofia Sans Semi Condensed' ;
+    font-weight: 400;
+    font-style: normal;
 }
+
+
 
 #project-contents{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "topbar topbar topbar"
         "project1 project2 project3"
         "project4 project5 project6";
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+}
+
+.project-title{
+    background-color: rgb(27, 116, 125);
+    grid-area: topbar;
+    width: 100vw;
 }
 
 #project-contents img {
     max-width: 400px;
     max-height: 300px;
+}
+
+.bussite {
+    display: flex;
+    grid-area: project1;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(27, 116, 125);
+    width: min-content;
 }
