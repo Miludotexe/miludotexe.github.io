@@ -12,6 +12,12 @@ body {
     display: none;
 }
 
+
+a {
+    text-decoration: none;
+    color: rgb(211, 216, 216);
+
+}
 /* Toppanel rules */
 
 #toppanel{
@@ -99,10 +105,11 @@ body {
 
 
 #project-contents{
+    
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, min-content);
-    grid-gap: 10px;
+    grid-gap: 20px;
     justify-items: center;
 
 }
@@ -113,6 +120,7 @@ body {
     grid-row: 1;
     width: 100vw;
     height: min-content;
+    margin-top: 45px;
 }
 
 #project-contents img {
@@ -120,6 +128,11 @@ body {
     max-height: 250px;
     
 }
+
+#project-contents a :hover{
+     animation: hoveraniprojects 0.5s;
+}
+
 
 .bussite {
     display: flex;
@@ -152,6 +165,7 @@ body {
     padding: 5px;
     background-color: rgb(27, 116, 125);
     width: min-content;
+    padding: 5px;
 }
 
 .future-project2 {
@@ -163,9 +177,27 @@ body {
     padding: 5px;
     background-color: rgb(27, 116, 125);
     width: min-content;
+    padding: 5px;
 }
 
 
 tag {
     padding: 10px 0px 0px 0px;
 }
+
+#kp{
+    border-radius: 5px;
+}
+
+/* animations */
+
+@keyframes hoveraniprojects {
+    0%{
+        padding: 5px;
+    }
+
+    100%{
+        padding: 15px;
+    }
+}
+
