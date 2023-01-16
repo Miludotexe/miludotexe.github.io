@@ -100,22 +100,25 @@ body {
 
 #project-contents{
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, min-content);
     grid-gap: 10px;
+    justify-items: center;
+
 }
 
 .project-title{
     background-color: rgb(27, 116, 125);
-    grid-column: 1/3;
+    grid-column: 1/4;
     grid-row: 1;
     width: 100vw;
     height: min-content;
 }
 
 #project-contents img {
-    max-width: 2000px;
-    max-height: 120px;
+    min-width: 500px;
+    max-height: 250px;
+    
 }
 
 .bussite {
@@ -139,6 +142,29 @@ body {
     background-color: rgb(27, 116, 125);
     width: min-content;
 }
+
+.future-project1 {
+    display: flex;
+    grid-column: 3;
+    grid-row: 2;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgb(27, 116, 125);
+    width: min-content;
+}
+
+.future-project2 {
+    display: flex;
+    grid-column: 2;
+    grid-row: 3;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgb(27, 116, 125);
+    width: min-content;
+}
+
 
 tag {
     padding: 10px 0px 0px 0px;
