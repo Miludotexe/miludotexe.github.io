@@ -33,6 +33,7 @@ a {
 #toppanel li{
     padding: 20px;
     display: inline;
+    margin-right: -30px;
 }
 
 #content{
@@ -40,9 +41,15 @@ a {
     padding-top: 100vh;
 }
 
-#external-links{
-    align-items: right;
-    max-height: 20px;
+.external-links {
+    float: right;
+    margin-top:-32px;
+    margin-left: -50px;
+}
+
+.external-links img{
+    max-height: 40px;
+    
 }
 
 /* Title slide rules */
@@ -128,9 +135,6 @@ a {
     
 }
 
-#project-contents a :hover{
-     animation: hoveraniprojects 0.5s;
-}
 
 
 .bussite {
@@ -142,6 +146,8 @@ a {
     padding: 10px;
     background-color: rgb(27, 116, 125);
     width: min-content;
+    box-shadow: 0px 0px 0px 0px rgb(38, 154, 153);
+    
 }
 
 .future-project {
@@ -153,6 +159,7 @@ a {
     padding: 5px;
     background-color: rgb(27, 116, 125);
     width: min-content;
+    box-shadow: 5px;
 }
 
 .future-project1 {
@@ -165,6 +172,7 @@ a {
     background-color: rgb(27, 116, 125);
     width: min-content;
     padding: 5px;
+    box-shadow: 5px;
 }
 
 .future-project2 {
@@ -177,6 +185,7 @@ a {
     background-color: rgb(27, 116, 125);
     width: min-content;
     padding: 5px;
+    box-shadow: 5px;
 }
 
 
@@ -190,13 +199,5 @@ tag {
 
 /* animations */
 
-@keyframes hoveraniprojects {
-    0%{
-        padding: 5px;
-    }
 
-    100%{
-        padding: 15px;
-    }
-}
 
