@@ -1,5 +1,5 @@
 @import url(./Assets/codingfont.css);
-@import url(./Assets/Sofiafont.css);
+
 
 body {
     background-color: rgb(17, 20, 24);
@@ -28,22 +28,21 @@ a {
     font-weight: bold;
     text-align: center;
     z-index: 1;
-    
-    
-    
 }
 
 #toppanel li{
     padding: 20px;
     display: inline;
-    
 }
 
 #content{
-    /* padding-top: 20%; */
     color: rgb(211, 216, 216);
     padding-top: 100vh;
-    /* text-align: center; */
+}
+
+#external-links{
+    align-items: right;
+    max-height: 20px;
 }
 
 /* Title slide rules */
